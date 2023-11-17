@@ -62,7 +62,7 @@ const PostShare = () => {
         alt=""
       />
       <div>
-        <input type="text" required ref={desc} placeholder="What's happening" />
+        <input className="share-input" type="text" required ref={desc} placeholder="What's happening" />
         <div className="postOptions">
           <div
             className="option"
