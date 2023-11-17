@@ -1,0 +1,76 @@
+/* Common styles for all screen sizes */
+.Auth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.infoForm {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.infoInput {
+    border: none;
+    outline: none;
+    background-color: var(--inputColor);
+    border-radius: 8px;
+    padding: 15px;
+    /* Adjust padding for smaller screens */
+    flex: 1;
+}
+
+.infoForm>div {
+    display: flex;
+    flex-direction: column;
+    /* Change to column layout for smaller screens */
+    gap: 1rem;
+    width: 90%;
+}
+
+.authForm {
+    background-color: #ebf0f6;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.infoButton {
+    height: 2.5rem;
+}
+
+/* Media query for screens with a maximum width of 768px (typical tablet portrait) */
+@media (max-width: 768px) {
+    .Auth {
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
+        text-align: center;
+    }
+
+    .infoInput {
+        padding: 15px;
+    }
+}
+
+/* Media query for screens with a maximum width of 576px (typical phone portrait) */
+@media (max-width: 576px) {
+    .infoInput {
+        padding: 10px;
+    }
+
+    .infoForm {
+        width: 350px;
+    }
+}
+
+@media (max-width: 416px) {
+    .infoForm {
+        width: 300px;
+    }
+}
